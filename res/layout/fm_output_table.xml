@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RadioGroup 
+        android:id="@+id/rg_top_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <RadioButton
+			android:id="@+id/btn_show_five"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="2.5"
+			android:padding="10dp"
+			android:background="@drawable/btn_radio_selector"
+			android:button="@null"
+			android:checked="true"
+			android:text="@string/test_pwd_five"
+			android:textSize="16sp"
+			android:textColor="@color/my_white" />
+
+        <RadioButton
+            android:id="@+id/btn_show_six"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="10dp"
+            android:background="@drawable/btn_radio_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/test_pwd_six"
+            android:textSize="16sp"
+            android:textColor="@color/my_white" />
+    </RadioGroup>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+       	android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/my_light_blue"
+		android:paddingLeft="4dp"
+		android:paddingRight="4dp" >
+		
+        <TextView
+            android:text="@string/user_id"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:text="@string/user_name"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:text="@string/eer_five"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:text="@string/eer_ten"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:text="@string/eer_twenty"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_eer_table"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
